@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo img {
+    height: 63px;
+    margin: 17px 25px;
+    border-radius: 60px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    padding: 3px 200px;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(/image/background\ picture.jpg)no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#home h1 {
+    text-align: center;
+    color: white;
+}
+
+#home p {
+    font-family: 'Gloock', serif;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Gloock', serif;
+}
+
+.btn {
+    border-radius: 13px;
+    color: black;
+    background-color: rgb(110, 239, 110);
+    padding: 5px;
+    margin: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: yellow;
+}
+
+.center {
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Gloock', serif;
+}
+
+#services {
+    display: flex;
+    margin: 50px;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 34px;
+    margin: 4px 9px;
+    border-radius: 30px;
+    background-color: rgb(224, 213, 213);
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Gloock', serif;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item {
+    padding: 60px;
+}
+
+#clients img {
+    height: 144px;
+}
+
+footer {
+    background-color: rgb(241, 241, 10);
+    color: black;
+    font-family: 'Gloock', serif;
+    padding: 9px 14px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 34px;
+    font-family: 'Gloock', serif;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact input {
+    width: 550px;
+    padding: 5px;
+    margin: 10px 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    display: flex;
+    font-size: 1.3rem;
+}
+
+#contact-box input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.formbtn {
+    padding: 3px 13px;
+    margin: 23px;
+    font-size: 17px;
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+}
+
+.formbtn:hover {
+    background-color: red;
+    cursor: pointer;
+}
